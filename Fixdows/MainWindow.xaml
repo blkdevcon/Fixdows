@@ -27,6 +27,13 @@
                 <Button x:Name="WupdButton" Content="Reset Windows Update!" HorizontalAlignment="Left" Margin="243,197,0,0" VerticalAlignment="Top" Width="299" Height="106" FontSize="24" Click="WupdButton_Click"/>
             </Grid>
         </TabItem>
+        <TabItem Header="Windows Store Reset">
+            <Grid>
+                <Label Content="Windows Store Fixes" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="232" FontFamily="Verdana" FontSize="18"/>
+                <Label Content="If you're having issues with Windows Store you can try this.&#xD;&#xA;It resets Windows Store through a native tool called WSReset.&#xD;&#xA;It can fix issues with Windows Store not being able to find new apps,&#xD;&#xA;updates, whatever." HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="114" Width="447" FontSize="14"/>
+                <Button x:Name="WSResetButton" Content="Reset Windows Store!" HorizontalAlignment="Left" Margin="243,197,0,0" VerticalAlignment="Top" Width="299" Height="106" FontSize="24" Click="WSResetButton_Click"/>
+            </Grid>
+        </TabItem>
         <TabItem Header="Integrity Checks &amp; Fixes">
             <Grid>
                 <Label Content="Integrity Checks &amp; Fixes" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="232" FontFamily="Verdana" FontSize="18"/>

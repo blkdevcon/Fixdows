@@ -97,5 +97,12 @@ namespace Fixdows
             wu.Verb = "runas"; // Just to make sure that we launch as administrator
             Process.Start(wu); // Now we run the integrity check script
         }
+
+        private void WSResetButton_Click(object sender, RoutedEventArgs e)
+        {
+            var ws = new ProcessStartInfo("WSReset.exe");
+            ws.Verb = "runas"; // Just to make sure that we launch as administrator
+            Process.Start(ws); // Now we run the integrity check script
+        }
     }
 }
