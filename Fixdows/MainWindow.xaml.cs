@@ -33,12 +33,12 @@ namespace Fixdows
 
         private void AboutRedirButtonGithub_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("https://github.com/terrific-tea/Fixdows");
+            Process.Start("https://github.com/Oxygemo/Fixdows");
         }
 
         private void AboutRedirButtonDiscord_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("https://terrific-tea.github.io/links/discord");
+            Process.Start("https://discord.gg/u3MEEaMq2Y");
         }
 
         private void AboutRedirButtonMyEmail_Click(object sender, RoutedEventArgs e)

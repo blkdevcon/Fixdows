@@ -157,9 +157,6 @@
   <ItemGroup>
     <Resource Include="tab-shot.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="tts-logo-new-cup-icon.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>
