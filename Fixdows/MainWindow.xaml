@@ -21,6 +21,9 @@
             <Grid>
                 <Label Content="Windows Update Fixes" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="232" FontFamily="Verdana" FontSize="18"/>
                 <Label Content="If you're having issues with Windows Update you can try this.&#xD;&#xA;This resets all Windows Update components, and restarts services. &#xD;&#xA;It also removes Windows Update group policies!&#xD;&#xA;&#xD;&#xA;Thanks to Shawn Brink on tenforums.com for this script.&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="114" Width="447" FontSize="14"/>
+                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="363,130,0,242" Height="18" Width="141" FontSize="14">
+                    <Hyperlink x:Name="WUSourceLabel" Click="WUSource_Click" FontSize="12">Source for the script</Hyperlink>
+                </TextBlock>
                 <Button x:Name="WupdButton" Content="Reset Windows Update!" HorizontalAlignment="Left" Margin="243,197,0,0" VerticalAlignment="Top" Width="299" Height="106" FontSize="24" Click="WupdButton_Click"/>
             </Grid>
         </TabItem>

@@ -61,6 +61,11 @@ namespace Fixdows
             Process.Start("https://windirstat.net");
         }
 
+        private void WUSource_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start("https://www.tenforums.com/tutorials/24742-reset-windows-update-windows-10-a.html");
+        }
+
         private void IntegrityFixButton_click(object sender, RoutedEventArgs e)
         {
             var dir = Directory.GetCurrentDirectory(); // Get current directory before actual code, and assign it to a variable ( I can probably optimize this )
