@@ -33,7 +33,7 @@ namespace Fixdows
 
         private void AboutRedirButtonGithub_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("https://github.com/Oxygemo/Fixdows");
+            Process.Start("https://github.com/Odyssey346/Fixdows");
         }
 
         private void AboutRedirButtonDiscord_Click(object sender, RoutedEventArgs e)
@@ -43,7 +43,7 @@ namespace Fixdows
 
         private void AboutRedirButtonMyEmail_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("mailto:alej0hio2007@gmail.com");
+            Process.Start("mailto:odyssey346@disroot.org");
         }
 
         private void CleanDiskButton_Click(object sender, RoutedEventArgs e)
