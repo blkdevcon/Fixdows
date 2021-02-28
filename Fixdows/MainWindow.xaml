@@ -14,6 +14,7 @@
                 </Label>
                 <Image HorizontalAlignment="Left" Height="73" Margin="62,170,0,0" VerticalAlignment="Top" Width="652" Source="tab-shot.png" Stretch="Fill"/>
                 <Label Content="Click on a tab (above) to navigate around the software." HorizontalAlignment="Left" Margin="212,130,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.209,-0.061" Height="35" Width="349" FontSize="14"/>
+                <Button x:Name="UpdateCheck" Content="Check for updates" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top" Width="127" Click="UpdateCheckButtonClicked"/>
 
             </Grid>
         </TabItem>

@@ -104,5 +104,9 @@ namespace Fixdows
             ws.Verb = "runas"; // Just to make sure that we launch as administrator
             Process.Start(ws); // Now we run the integrity check script
         }
+        private void UpdateCheckButtonClicked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
