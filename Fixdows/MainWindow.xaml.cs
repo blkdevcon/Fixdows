@@ -1,20 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
+using System.Net;
 using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using System.Windows.Threading;
 
 
 namespace Fixdows
@@ -27,9 +16,8 @@ namespace Fixdows
         public MainWindow()
         {
             InitializeComponent();
+            var main = this;
         }
-
-
 
         private void AboutRedirButtonGithub_Click(object sender, RoutedEventArgs e)
         {
@@ -106,7 +94,10 @@ namespace Fixdows
         }
         private void UpdateCheckButtonClicked(object sender, RoutedEventArgs e)
         {
-
+            UpdateUI updui = new UpdateUI();
+            updui.Show();
+            var version = "devel";
+            updui.updateui_this.Status = "Current version: " + version;
         }
     }
 }
