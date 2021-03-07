@@ -12,7 +12,9 @@
         <Label x:Name="CurrentVersion_UpdUI" Content="CURRENTVERSION_UPDUI_LABEL_TEXT" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top"/>
         <fa:ImageAwesome Icon="Refresh" Spin="True" SpinDuration="5" VerticalAlignment="center" Width="100" Height="100"/>
         <Viewbox Stretch="Uniform">
-            <Label x:Name="UPDATE_STATUS_LABEL" Content="Status" HorizontalAlignment="Center" Margin="386,347,366,0" VerticalAlignment="Top"/>
+            <Label x:Name="UPDATE_STATUS_LABEL" Content="Status" HorizontalAlignment="Center" Margin="386,347,366,0" VerticalAlignment="Top" FontSize="18"/>
         </Viewbox>
+        <Label x:Name="UPSTREAMVERSION_LABEL" Content="Loading GH Release data" HorizontalAlignment="Left" Margin="10,84,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.211,0.64" Width="213"/>
+
     </Grid>
 </Window>
