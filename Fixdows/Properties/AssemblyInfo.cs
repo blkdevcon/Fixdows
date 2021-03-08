@@ -9,9 +9,9 @@ using System.Windows;
 [assembly: AssemblyTitle("Fixdows")]
 [assembly: AssemblyDescription("Fixdows is a tool made in C# to repair common issues among Windows computers.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Terrific Tea Studios")]
+[assembly: AssemblyCompany("Odyssey346")]
 [assembly: AssemblyProduct("Fixdows")]
-[assembly: AssemblyCopyright("Copyright © Terrific Tea Studios 2021")]
+[assembly: AssemblyCopyright("Copyright © Odyssey346 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -50,6 +50,6 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.1.1.0")]
+[assembly: AssemblyFileVersion("1.1.1.0")]
 [assembly: NeutralResourcesLanguage("en-GB")]
