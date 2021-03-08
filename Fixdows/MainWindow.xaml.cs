@@ -1,12 +1,8 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.IO.Compression;
 using System.Net;
-using System.Text;
 using System.Windows;
 
 
@@ -102,7 +98,7 @@ namespace Fixdows
         {
             UpdateUI updui = new UpdateUI();
             updui.Show();
-            var version = "1.1"; // Version we'll use to compare & to show on the update UI
+            var version = "1.1.1"; // Version we'll use to compare & to show on the update UI
             string update_url = "https://api.github.com/repos/odyssey346/fixdows/releases/latest"; // Our latest github release. Please don't change this.
             updui.updateui_this.Status = "Current version: " + version;
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(update_url);
@@ -131,7 +127,7 @@ namespace Fixdows
                 Console.WriteLine("we're outdated!");
                 var dir = Directory.GetCurrentDirectory();
                 updui.updateui_this.StatusLabelUpdate = "Downloading release version " + updatetagname_str;
-                string updatereleasezip = "https://github.com/Odyssey346/Fixdows/releases/latest/download/Fixdows-" + data.tag_name +"-installer.exe";
+                string updatereleasezip = "https://github.com/Odyssey346/Fixdows/releases/latest/download/Fixdows-" + data.tag_name + "-installer.exe";
                 WebClient webClient = new WebClient();
                 Console.WriteLine(updatereleasezip);
                 webClient.DownloadFile(updatereleasezip, @dir + "\\relinstaller.exe");
@@ -140,7 +136,7 @@ namespace Fixdows
                 installer.Verb = "runas"; // Just to make sure that we launch as administrator
                 installer.Arguments = "/DIR=" + dir + "  /LOG /CLOSEAPPLICATIONS"; // Arguments for the installer program
                 Process.Start(installer); // Now we run the installer. 
-            }   
+            }
         }
     }
 }
