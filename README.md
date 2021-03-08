@@ -3,7 +3,7 @@ Fixdows is a tool made in C# to repair common issues among Windows computers.
 Sort of a continuation of [Winblows Maintenance Tool](https://github.com/Oxygemo/Winblows-Maintenance-Tool).
 
 [![Release Downloads](https://img.shields.io/github/downloads/Oxygemo/Fixdows/total)](https://github.com/Oxygemo/Fixdows/releases/latest)
-[![Chat](https://img.shields.io/discord/798552870907150356)](https://discord.gg/u3MEEaMq2Y)
+[![Chat](https://img.shields.io/discord/798829344016433173)](https://discord.gg/HYrafUqq73)
 
 # Features
 - Fix Windows Update issues
