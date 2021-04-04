@@ -25,11 +25,6 @@ namespace Fixdows
             Process.Start("https://github.com/Odyssey346/Fixdows");
         }
 
-        private void AboutRedirButtonDiscord_Click(object sender, RoutedEventArgs e)
-        {
-            Process.Start("https://discord.gg/HYrafUqq73");
-        }
-
         private void AboutRedirButtonMyEmail_Click(object sender, RoutedEventArgs e)
         {
             Process.Start("mailto:odyssey346@disroot.org");
@@ -97,46 +92,7 @@ namespace Fixdows
         private void UpdateCheckButtonClicked(object sender, RoutedEventArgs e)
         {
             UpdateUI updui = new UpdateUI();
-            updui.Show();
-            var version = "1.1.1"; // Version we'll use to compare & to show on the update UI
-            string update_url = "https://api.github.com/repos/odyssey346/fixdows/releases/latest"; // Our latest github release. Please don't change this.
-            updui.updateui_this.Status = "Current version: " + version;
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(update_url);
-            request.UserAgent = "Fixdows-Update-Tool"; // I'd prefer to not have to put in the useragent but it returns a 403 if I don't.
-            request.Method = "GET"; // We're not POSTing.
-            request.Accept = "application/vnd.github.v3+json"; // Just in case
-            HttpWebResponse GhReleaseRes = (HttpWebResponse)request.GetResponse();
-            updui.updateui_this.StatusLabelUpdate = "Sent request to GitHub to get release data, got this in response: " + GhReleaseRes.StatusCode; // This shows the user if the request went through
-            Stream dataStream = GhReleaseRes.GetResponseStream();
-            StreamReader reader = new StreamReader(dataStream);
-            string strResponse = reader.ReadToEnd();
-            dynamic data = JObject.Parse(strResponse);
-            Console.WriteLine(strResponse);
-            Console.WriteLine(data.tag_name);
-            updui.UPSTREAMVERSION_LABEL.Content = "Current GitHub version: " + data.tag_name;
-            string updatetagname_str = Convert.ToString(data.tag_name);
-            Console.WriteLine(updatetagname_str);
-            if (version.Equals(updatetagname_str))
-            {
-                Console.WriteLine("we're up to date");
-                updui.updateui_this.StatusLabelUpdate = "You're up to date.";
-
-            }
-            else
-            {
-                Console.WriteLine("we're outdated!");
-                var dir = Directory.GetCurrentDirectory();
-                updui.updateui_this.StatusLabelUpdate = "Downloading release version " + updatetagname_str;
-                string updatereleasezip = "https://github.com/Odyssey346/Fixdows/releases/latest/download/Fixdows-" + data.tag_name + "-installer.exe";
-                WebClient webClient = new WebClient();
-                Console.WriteLine(updatereleasezip);
-                webClient.DownloadFile(updatereleasezip, @dir + "\\relinstaller.exe");
-                string zipPath = @dir + "\\relinstaller.exe";
-                var installer = new ProcessStartInfo(zipPath);
-                installer.Verb = "runas"; // Just to make sure that we launch as administrator
-                installer.Arguments = "/DIR=" + dir + "  /LOG /CLOSEAPPLICATIONS"; // Arguments for the installer program
-                Process.Start(installer); // Now we run the installer. 
-            }
+            updui.Show(); 
         }
     }
 }
