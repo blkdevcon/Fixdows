@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Fixdows"
+        xmlns:local="clr-namespace:Fixdows" xmlns:fa="http://schemas.fontawesome.io/icons/"
         mc:Ignorable="d"
         Title="Fixdows" Height="450" Width="800" ResizeMode="CanMinimize">
     <TabControl x:Name="MainTabs" HorizontalAlignment="Left" Height="418" VerticalAlignment="Top" Width="790">
@@ -12,8 +12,7 @@
                 <Label Content="Hello" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="49" Width="154" FontSize="18" FontFamily="Tahoma"/>
                 <Label Content="To repair something, you should find the tab that corresponds to your issue.&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.836,-0.254" Width="482" Height="33" FontSize="14">
                 </Label>
-                <Image HorizontalAlignment="Left" Height="73" Margin="62,170,0,0" VerticalAlignment="Top" Width="652" Source="tab-shot.png" Stretch="Fill"/>
-                <Label Content="Click on a tab (above) to navigate around the software." HorizontalAlignment="Left" Margin="212,130,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.209,-0.061" Height="35" Width="349" FontSize="14"/>
+                <Label Content="Click on a tab (above) to navigate around the software." HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.209,-0.061" Height="35" Width="349" FontSize="14"/>
                 <Button x:Name="UpdateCheck" Content="Check for updates" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top" Width="127" Click="UpdateCheckButtonClicked"/>
 
             </Grid>
@@ -64,7 +63,7 @@
             </Grid>
         </TabItem>
         <TabItem Header="About Fixdows">
-            <Grid>
+            <Grid Cursor="Hand">
                 <Label Content="Fixdows" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="33" Width="86" FontSize="18" FontFamily="Verdana"/>
                 <Label Content="Fixdows is a tool made in C# to repair common issues among Windows computers.&#xD;&#xA;Licensed with GPL3." HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Height="46" Width="527" FontSize="14"/>
                 <Label Content="You are running version 1.1.2.&#xA;" HorizontalAlignment="Left" Margin="0,176,0,0" VerticalAlignment="Top" Height="32" Width="205" FontSize="14"/>

@@ -16,7 +16,6 @@ namespace Fixdows
         public MainWindow()
         {
             InitializeComponent();
-            var main = this;
             File.Delete("relinstaller.exe");
         }
 
