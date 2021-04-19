@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Windows;
-
+using System.Windows.Navigation;
 
 namespace Fixdows
 {
@@ -32,21 +32,6 @@ namespace Fixdows
         private void CleanDiskButton_Click(object sender, RoutedEventArgs e)
         {
             Process.Start("cleanmgr");
-        }
-
-        private void EverythingLabel_Click(object sender, RoutedEventArgs e)
-        {
-            Process.Start("https://voidtools.com");
-        }
-
-        private void WDSLabel_Click(object sender, RoutedEventArgs e)
-        {
-            Process.Start("https://windirstat.net");
-        }
-
-        private void WUSource_Click(object sender, RoutedEventArgs e)
-        {
-            Process.Start("https://www.tenforums.com/tutorials/24742-reset-windows-update-windows-10-a.html");
         }
 
         private void IntegrityFixButton_click(object sender, RoutedEventArgs e)
@@ -93,5 +78,15 @@ namespace Fixdows
             UpdateUI updui = new UpdateUI();
             updui.Show(); 
         }
+
+        private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
+        {
+            // for .NET Core you need to add UseShellExecute = true
+            // see https://docs.microsoft.com/dotnet/api/system.diagnostics.processstartinfo.useshellexecute#property-value
+            Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
+            e.Handled = true;
+        }
+
+
     }
 }

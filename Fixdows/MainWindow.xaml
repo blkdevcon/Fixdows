@@ -22,7 +22,7 @@
                 <Label Content="Windows Update Fixes" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="232" FontFamily="Verdana" FontSize="18"/>
                 <Label Content="If you're having issues with Windows Update you can try this.&#xD;&#xA;This resets all Windows Update components, and restarts services. &#xD;&#xA;It also removes Windows Update group policies!&#xD;&#xA;&#xD;&#xA;Thanks to Shawn Brink on tenforums.com for this script.&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="114" Width="447" FontSize="14"/>
                 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="363,130,0,242" Height="18" Width="141" FontSize="14">
-                    <Hyperlink x:Name="WUSourceLabel" Click="WUSource_Click" FontSize="12">Source for the script</Hyperlink>
+                    <Hyperlink x:Name="WUSourceLabel" NavigateUri="https://www.tenforums.com/tutorials/24742-reset-windows-update-windows-10-a.html" RequestNavigate="Hyperlink_RequestNavigate" FontSize="12">Source for the script</Hyperlink>
                 </TextBlock>
                 <Button x:Name="WupdButton" Content="Reset Windows Update!" HorizontalAlignment="Left" Margin="243,197,0,0" VerticalAlignment="Top" Width="299" Height="106" FontSize="24" Click="WupdButton_Click"/>
             </Grid>
@@ -48,16 +48,16 @@
                 <Button x:Name="CleanDiskButton" Content="Click here to start cleaning your disk(s)" HorizontalAlignment="Left" Margin="209,213,0,0" VerticalAlignment="Top" Width="358" Height="91" FontSize="20" Click="CleanDiskButton_Click"/>
             </Grid>
         </TabItem>
-        <TabItem Header="Resources">
+        <TabItem Header="Resources"> <!-- This should be filled out. -->
             <Grid>
                 <Label Content="Resources" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="232" FontFamily="Verdana" FontSize="18"/>
                 <Label Content="Links to cool apps that everyone should have. (None of these are affiliated with &#xD;&#xA;the Fixdows dev team, we just think they're great.)" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="50" Width="532" FontSize="14"/>
                 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,105,0,267" Height="18" Width="55" FontSize="14">
-                    <Hyperlink x:Name="EverythingLabel" FontSize="12" Click="EverythingLabel_Click">Everything</Hyperlink>
+                    <Hyperlink x:Name="EverythingLabel" FontSize="12" NavigateUri="https://voidtools.com" RequestNavigate="Hyperlink_RequestNavigate">Everything</Hyperlink>
                 </TextBlock>
                 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="70,105,0,267" Height="18" Width="237" Text="- Locate files and folders by name instantly."/>
                 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,128,0,244" Height="18" Width="60" FontSize="14" RenderTransformOrigin="0.424,3.765">
-                    <Hyperlink x:Name="WDSLabel" Click="WDSLabel_Click" FontSize="12">WinDirStat</Hyperlink>
+                    <Hyperlink x:Name="WDSLabel" NavigateUri="https://windirstat.net" RequestNavigate="Hyperlink_RequestNavigate" Click="WDSLabel_Click" FontSize="12">WinDirStat</Hyperlink>
                 </TextBlock>
                 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="70,128,0,244" Height="18" Width="249" Text="- Look at what uses most space on your disk(s)."/>
             </Grid>
@@ -70,6 +70,9 @@
                 <Label Content="Made by Odyssey346." HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" Height="32" Width="284" FontSize="14"/>
                 <Button x:Name="AboutRedirButtonGithub" Content="Fixdows Github" HorizontalAlignment="Left" Margin="10,131,0,0" VerticalAlignment="Top" Width="101" Height="26" Click="AboutRedirButtonGithub_Click"/>
                 <Button x:Name="AboutRedirButtonMyEmail" Content="Odyssey346's E-mail" HorizontalAlignment="Left" Margin="131,131,0,0" VerticalAlignment="Top" Width="123" Height="26" Click="AboutRedirButtonMyEmail_Click"/>
+                <TextBlock HorizontalAlignment="Left" Margin="323,344,0,0" TextWrapping="Wrap" Text="Want to get involved? " VerticalAlignment="Top" Height="16" Width="183">
+                    <Hyperlink x:Name="GetInvolvedHyperlink" NavigateUri="https://github.com/Odyssey346/Fixdows/wiki/Contributing" RequestNavigate="Hyperlink_RequestNavigate" FontSize="12">Click here!</Hyperlink>
+                </TextBlock>
             </Grid>
         </TabItem>
     </TabControl>
