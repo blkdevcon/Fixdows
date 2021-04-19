@@ -14,7 +14,9 @@
                 </Label>
                 <Label Content="Click on a tab (above) to navigate around the software." HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.209,-0.061" Height="35" Width="349" FontSize="14"/>
                 <Button x:Name="UpdateCheck" Content="Check for updates" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top" Width="127" Click="UpdateCheckButtonClicked"/>
-
+                <TextBlock HorizontalAlignment="Left" Margin="10,132,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="18" Width="166">
+                    <Hyperlink NavigateUri="https://github.com/Odyssey346/Fixdows/wiki/Help-for-new-users" RequestNavigate="Hyperlink_RequestNavigate">Need more help? Click here!</Hyperlink>
+                </TextBlock>
             </Grid>
         </TabItem>
         <TabItem Header="Windows Update Fixes">
@@ -63,7 +65,7 @@
             </Grid>
         </TabItem>
         <TabItem Header="About Fixdows">
-            <Grid Cursor="Hand">
+            <Grid>
                 <Label Content="Fixdows" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="33" Width="86" FontSize="18" FontFamily="Verdana"/>
                 <Label Content="Fixdows is a tool made in C# to repair common issues among Windows computers.&#xD;&#xA;Licensed with GPL3." HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Height="46" Width="527" FontSize="14"/>
                 <Label Content="You are running version 1.1.2.&#xA;" HorizontalAlignment="Left" Margin="0,176,0,0" VerticalAlignment="Top" Height="32" Width="205" FontSize="14"/>
