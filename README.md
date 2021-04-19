@@ -5,6 +5,10 @@ Sort of a continuation of [Winblows Maintenance Tool](https://github.com/Odyssey
 
 [![Release Downloads](https://img.shields.io/github/downloads/Odyssey346/Fixdows/total)](https://github.com/Odyssey346/Fixdows/releases/latest)
 
+# Download Fixdows
+You should only download Fixdows from here. Other sites work fine, **as long as you don't download from their servers**. It's up to you to figure that out.
+[Download by clicking this link](https://github.com/Odyssey346/Fixdows/releases/latest)
+
 # Features
 - Fix Windows Update issues
 - Fix System Integrity
