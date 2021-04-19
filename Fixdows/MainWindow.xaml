@@ -57,7 +57,7 @@
                 </TextBlock>
                 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="70,105,0,267" Height="18" Width="237" Text="- Locate files and folders by name instantly."/>
                 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,128,0,244" Height="18" Width="60" FontSize="14" RenderTransformOrigin="0.424,3.765">
-                    <Hyperlink x:Name="WDSLabel" NavigateUri="https://windirstat.net" RequestNavigate="Hyperlink_RequestNavigate" Click="WDSLabel_Click" FontSize="12">WinDirStat</Hyperlink>
+                    <Hyperlink x:Name="WDSLabel" NavigateUri="https://windirstat.net" RequestNavigate="Hyperlink_RequestNavigate" FontSize="12">WinDirStat</Hyperlink>
                 </TextBlock>
                 <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" Margin="70,128,0,244" Height="18" Width="249" Text="- Look at what uses most space on your disk(s)."/>
             </Grid>
