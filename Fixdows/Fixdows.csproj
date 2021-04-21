@@ -198,34 +198,21 @@ cd ../
 cd ../
 copy assets bin
 cd bin
+copy cleanup.bat Debug
 copy integrity.bat Debug
 copy wu.bat Debug
 cd Debug
 mkdir assets
+copy cleanup.bat assets
 copy integrity.bat assets
 copy wu.bat assets
 cd ../
+del cleanup.bat
 del integrity.bat
 del wu.bat
 cd Debug
 del integrity.bat
 del wu.bat
-echo Copying assets to Release
-cd ../
-cd ../
-copy assets bin
-cd bin
-copy integrity.bat Release
-copy wu.bat Release
-cd Release
-mkdir assets
-copy integrity.bat assets
-copy wu.bat assets
-cd ../
-del integrity.bat
-del wu.bat
-cd Release
-del integrity.bat
-del wu.bat</PostBuildEvent>
+del cleanup.bat</PostBuildEvent>
   </PropertyGroup>
 </Project>

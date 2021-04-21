@@ -52,7 +52,7 @@ namespace Fixdows
             }
             else
             {
-                Console.WriteLine("we're outdated, or up to date!");
+                Console.WriteLine("we're outdated");
                 var dir = Directory.GetCurrentDirectory();
                 UPDATE_STATUS_LABEL.Content = "Downloading release version " + updatetagname_str;
                 string updatereleasezip = "https://github.com/Odyssey346/Fixdows/releases/latest/download/Fixdows-" + data.tag_name + "-installer.exe";

@@ -43,7 +43,7 @@ namespace Fixdows
 
         private void CleanDiskButton_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("cleanmgr");
+            OpenRepairTool("cleanup.bat");
         }
 
         private void IntegrityFixButton_click(object sender, RoutedEventArgs e)
