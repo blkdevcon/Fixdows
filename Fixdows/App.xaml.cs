@@ -8,4 +8,9 @@ namespace Fixdows
     public partial class App : Application
     {
     }
+
+    class SharedVariables
+    {
+        public static readonly string version = "1.2";
+    }
 }

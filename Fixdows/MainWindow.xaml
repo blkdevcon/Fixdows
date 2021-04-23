@@ -9,7 +9,7 @@
     <TabControl x:Name="MainTabs" HorizontalAlignment="Left" Height="418" VerticalAlignment="Top" Width="790">
         <TabItem Header="Home">
             <Grid>
-                <Label Content="Hello" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="49" Width="154" FontSize="18" FontFamily="Tahoma"/>
+                <Label Content="Hello" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="49" Width="154" FontSize="18" FontFamily="Verdana"/>
                 <Label Content="To repair something, you should find the tab that corresponds to your issue.&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.836,-0.254" Width="482" Height="33" FontSize="14">
                 </Label>
                 <Label Content="Click on a tab (above) to navigate around the software." HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.209,-0.061" Height="35" Width="349" FontSize="14"/>
@@ -50,7 +50,8 @@
                 <Button x:Name="CleanDiskButton" Content="Click here to start cleaning your disk(s)" HorizontalAlignment="Left" Margin="209,213,0,0" VerticalAlignment="Top" Width="358" Height="91" FontSize="20" Click="CleanDiskButton_Click"/>
             </Grid>
         </TabItem>
-        <TabItem Header="Resources"> <!-- This should be filled out. -->
+        <TabItem Header="Resources">
+            <!-- This should be filled out. -->
             <Grid>
                 <Label Content="Resources" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="232" FontFamily="Verdana" FontSize="18"/>
                 <Label Content="Links to cool apps that everyone should have. (None of these are affiliated with &#xD;&#xA;the Fixdows dev team, we just think they're great.)" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="50" Width="532" FontSize="14"/>
@@ -66,14 +67,14 @@
         </TabItem>
         <TabItem Header="About Fixdows">
             <Grid>
-                <Label Content="Fixdows" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="33" Width="86" FontSize="18" FontFamily="Verdana"/>
+                <Label Content="Fixdows" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="33" Width="101" FontSize="18" FontFamily="Verdana"/>
                 <Label Content="Fixdows is a tool made in C# to repair common issues among Windows computers.&#xD;&#xA;Licensed with GPL3." HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Height="46" Width="527" FontSize="14"/>
-                <Label Content="You are running version 1.1.2.&#xA;" HorizontalAlignment="Left" Margin="0,176,0,0" VerticalAlignment="Top" Height="32" Width="205" FontSize="14"/>
+                <Label x:Name="VersionLabel" Content="ver" HorizontalAlignment="Left" Margin="89,9,0,0" Height="33" Width="98" FontSize="18" VerticalAlignment="Top" FontWeight="Bold" RenderTransformOrigin="1.377,0.53"/>
                 <Label Content="Made by Odyssey346." HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" Height="32" Width="284" FontSize="14"/>
-                <Button x:Name="AboutRedirButtonGithub" Content="Fixdows Github" HorizontalAlignment="Left" Margin="10,131,0,0" VerticalAlignment="Top" Width="101" Height="26" Click="AboutRedirButtonGithub_Click"/>
-                <Button x:Name="AboutRedirButtonMyEmail" Content="Odyssey346's E-mail" HorizontalAlignment="Left" Margin="131,131,0,0" VerticalAlignment="Top" Width="123" Height="26" Click="AboutRedirButtonMyEmail_Click"/>
-                <TextBlock HorizontalAlignment="Left" Margin="323,344,0,0" TextWrapping="Wrap" Text="Want to get involved? " VerticalAlignment="Top" Height="16" Width="183">
-                    <Hyperlink x:Name="GetInvolvedHyperlink" NavigateUri="https://github.com/Odyssey346/Fixdows/wiki/Contributing" RequestNavigate="Hyperlink_RequestNavigate" FontSize="12">Click here!</Hyperlink>
+                <Button x:Name="AboutRedirButtonGithub" Content="Fixdows Github" HorizontalAlignment="Left" Margin="10,137,0,0" VerticalAlignment="Top" Width="101" Height="26" Click="AboutRedirButtonGithub_Click"/>
+                <Button x:Name="AboutRedirButtonMyEmail" Content="Odyssey346's E-mail" HorizontalAlignment="Left" Margin="131,137,0,0" VerticalAlignment="Top" Width="123" Height="26" Click="AboutRedirButtonMyEmail_Click"/>
+                <TextBlock Margin="269,0,247,24" Text="Want to get involved? Have feedback? " TextWrapping="Wrap" Height="16" Width="268" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                    <Hyperlink NavigateUri="https://github.com/Odyssey346/Fixdows/wiki/Contributing" RequestNavigate="Hyperlink_RequestNavigate">Click here!</Hyperlink>
                 </TextBlock>
             </Grid>
         </TabItem>

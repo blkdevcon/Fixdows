@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows;
 using System.Windows.Navigation;
+using static Fixdows.SharedVariables;
 
 namespace Fixdows
 {
@@ -15,6 +16,7 @@ namespace Fixdows
         {
             InitializeComponent();
             File.Delete("relinstaller.exe");
+            VersionLabel.Content = SharedVariables.version;
         }
 
         private static void OpenRepairTool(string file)
